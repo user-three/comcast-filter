@@ -26,7 +26,7 @@ Open Chrome.
 Navigate to Settings... Tools... Extensions.
 Click + on "Developer mode"
 Click "Load unpacked extensions..."
-Navigate to the installation directory you and click Open.
+Navigate to the installation directory and click Open.
 ```
 
 
