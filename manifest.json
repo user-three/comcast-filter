@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Comcast Filter",
+  "version": "0.0.1",
+  "description": "Remove Comcast's injected content",
+  "permissions": [
+    "tabs"
+	],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["background.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "icons" : {
+  	"16": "images/icon-16x16.png",
+    "19": "images/icon-19x19.png",
+    "48": "images/icon-48x48.png",
+    "128": "images/icon-128x128.png",
+    "130": "images/icon-130x130.png",
+    "550": "images/icon-550x550.png"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
